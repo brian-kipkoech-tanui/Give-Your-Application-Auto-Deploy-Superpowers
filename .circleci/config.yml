@@ -296,7 +296,6 @@ jobs:
     steps:
       # Checkout code from git
       - checkout
-      - install_ansible
       - install_nodejs
       - install_awscli
 
