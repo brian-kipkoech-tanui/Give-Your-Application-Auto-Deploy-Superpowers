@@ -1,5 +1,10 @@
 version: 2.1
 
+orbs:
+  # Choose either one of the orbs below
+  # welcome: circleci/welcome-orb@0.4.1
+  aws-cli: circleci/aws-cli@2.0.3
+
 commands:
   destroy-environment:
     description: Destroy back-end and front-end cloudformation stacks given a workflow ID.
@@ -282,9 +287,6 @@ jobs:
                 curl https://kvdb.io/KeexTcJHhkbnrJGDZFnPjh/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1'
             fi
      # Here's where you will add some code to rollback on failure
-      docker:
-      # Docker image here that supports NodeJS
-        - image: amazon/aws-cli
       - destroy-environment
       - revert-migrations    
 
