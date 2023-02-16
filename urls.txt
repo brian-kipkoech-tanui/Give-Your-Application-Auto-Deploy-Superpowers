@@ -1,5 +1,5 @@
 S3_bucket link:
-http://udapeople-d00fd9f.s3-website-us-east-1.amazonaws.com
+http://udapeople-f01c35e.s3-website-us-east-1.amazonaws.com
 
 Github Link:
 https://github.com/brian-kipkoech-tanui/Give-Your-Application-Auto-Deploy-Superpowers

@@ -456,7 +456,7 @@ jobs:
               --parameter-overrides WorkflowID="${CIRCLE_WORKFLOW_ID:0:7}" \
               --stack-name InitialStack
       # Here's where you will add some code to rollback on failure  
-      - destroy-environment
+      # - destroy-environment
       - revert-migrations
 
   cleanup:
